@@ -1,0 +1,374 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@keyframes moverDerecha {
+from { transform: translateX(0); }
+to   { transform: translateX(200px); }
+}
+
+
+body {
+    background-color: #48e;
+    color: white;
+    
+}
+
+.navegacion {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px;
+}
+
+.perros-gatos {
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+}
+
+.title-principal {
+    color: white;
+    font-family: sans-serif;
+    text-shadow: 5px 5px 10px black;
+    text-align: center;
+    margin: 20px;
+}
+
+.inicio {
+    color: white;
+    text-decoration: none;
+    transition: background-color 1s linear;
+}
+
+.inicio:hover {
+    background-color: white;
+    color: #48e;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+.imagen-logo {
+    animation: pulse 2s infinite;
+    margin: 12px;
+}
+
+@keyframes pulce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+.cachorro-adopcion {
+    
+}
+
+
+.mascotas {
+    color: white;
+    text-decoration: none;
+    transition: background-color 1s linear;
+}
+
+.mascotas:hover {
+    background-color: white;
+    color: #48e;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+.contacto {
+    color: white;
+    text-decoration: none;
+    transition: background-color 1s linear;
+}
+
+.contacto:hover {
+    background-color: white;
+    color: #48e;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+.nosotros{
+    color: white;
+    text-decoration: none;
+    transition: background-color 1s linear;
+}
+
+.nosotros:hover {
+    background-color: white;
+    color: #48e;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+.testimonio {
+    color: white;
+    text-decoration: none;
+    transition: background-color 1s linear;
+}
+
+.testimonio:hover {
+    background-color: white;
+    color: #48e;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+.imagenes-gatoperro {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.title-secundario {
+    text-align: center;
+    margin: 50px;
+    font-family: sans-serif;
+    text-shadow: 5px 5px 10px black;
+    text-align: center;
+}
+
+.contenedor {
+    display: flex;
+    margin: 25px;
+    justify-content: space-between;
+}
+
+/* Mascotas.html */
+
+.inicio-mascotashtml {
+    color: white;
+    text-decoration: none;
+    margin: 30px;
+}
+
+.inicio-mascotashtml:hover {
+    background-color: white;
+    color: #48e;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+.title-mascotas {
+    margin: 20px;
+    color: white;
+    font-family: sans-serif;
+    text-shadow: 5px 5px 10px black;
+    
+}
+
+.mascotas-contenedor {
+    margin: 100px;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 20px;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 0.7;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    }
+
+
+.pitbull-img {
+    width: 300px;
+}
+
+.gato-trescolores {
+    width: 300px;
+}
+
+/* Contacto.html */
+
+.title-contacto {
+    padding: 20px;
+    color: white;
+    font-family: sans-serif;
+    text-shadow: 5px 5px 10px black;
+}
+
+.contenedor-contacto {
+    margin: 20px;
+}
+
+.nombre-apellido::placeholder {
+    background-color: #48e;
+    border-radius: 4px;
+    color: white;
+    padding: 5px;
+}
+
+.email::placeholder {
+    background-color: #48e;
+    border-radius: 4px;
+    border: 1px solid white;
+    color: white;
+    padding: 5px;
+}
+
+.celular::placeholder {
+    background-color: #48e;
+    border-radius: 4px;
+    border: 1px solid white;
+    color: white;
+    padding: 5px;
+}
+
+.mensaje::placeholder {
+    background-color: #48e;
+    border-radius: 4px;
+    border: 1px solid white;
+    color: white;
+    padding: 5px;
+}
+
+.contenedor-imputs {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin-left: 22px;
+    gap: 20px;
+    transition: 0.3s;
+}
+
+.contenedor-imputs:focus {
+    transform: scale(1.03);
+    border-color: royalblue;
+    box-shadow: 0 0 8px rgba(65, 105, 225, 0.5);
+}
+
+.inicio-contactohtml {
+    color: white;
+    text-decoration: none;
+    margin: 30px;
+}
+
+.inicio-contactohtml:hover {
+    background-color: white;
+    color: #48e;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+/* Nosotros.html */
+
+.title-nosotros {
+    padding-left: 20px;
+}
+
+.primer-h2 {
+    padding: 20px;
+}
+
+.text {
+    padding: 10px;
+}
+
+.imagenes-nosotros {
+    display: flex;
+    justify-content: space-around;
+    animation: slideInDown 0.8s ease-out forwards;
+    opacity: 0;
+}
+
+@keyframes slideInDown {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    }
+
+.contenedor-nosotros {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding-left: 20px;
+    gap: 15px;
+}
+
+.imagen-animalescampo {
+    width: 500px;
+    padding: 20px;
+    animation: slideInUp 0.8s ease-out forwards;
+    opacity: 0;
+}
+
+@keyframes slideInUp {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    }
+
+
+.inicio-nosotroshtml {
+    color: white;
+    text-decoration: none;
+    margin: 30px;
+}
+
+.inicio-nosotroshtml:hover {
+    background-color: white;
+    color: #48e;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+/* Testimonio.html */
+
+.title-testimonios {
+    padding-left: 20px;
+}
+
+.contenedor-testimonios {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+}
+
+
+.gato-naranja {
+    width: 300px;
+}
+
+.inicio-testimonioshtml {
+    color: white;
+    text-decoration: none;
+    margin: 30px;
+}
+
+.inicio-testimonioshtml:hover {
+    background-color: white;
+    color: #48e;
+    padding: 3px;
+    border-radius: 5px;
+}
